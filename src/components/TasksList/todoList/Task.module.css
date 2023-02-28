@@ -1,0 +1,76 @@
+.taskList+.taskList {
+  margin-top: .75rem;
+}
+
+.task {
+  background: var(--gray-500);
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--gray-400);
+  padding-right: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputTask {
+  display: flex;
+  gap: 0.954375rem;
+  padding: 1rem;
+}
+
+.taskcompleted {
+  text-decoration: line-through;
+  color: var(--gray-300);
+  opacity: .5;
+}
+
+.task .roundedCheckbox {
+  min-width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  border: 3px solid var(--blue);
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.task .roundedCheckbox:checked {
+  background-image: url("../../../assets/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom 3.3px;
+  background-size: .8rem;
+  background-color: var(--purple-dark);
+  border: 3px solid var(--purple-dark);
+}
+
+.task .textTask {
+  word-break: break-word;
+}
+
+
+.task p {
+  line-height: 1.4rem;
+  font-size: .875rem;
+  color: var(--gray-100);
+}
+
+.task p::first-letter {
+  text-transform: uppercase;
+}
+
+
+.task .trash {
+  background: none;
+  height: 0;
+  border: none;
+  color: var(--gray-100);
+  margin-top: 1rem;
+  cursor: pointer;
+  display: flex;
+}
+
+.task .trash:hover {
+  color: var(--danger);
+}
