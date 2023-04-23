@@ -14,9 +14,9 @@
 #### web
 
 Clone o repositório:
-'''bash
+```bash
 git clone https://github.com/brunojosematias/todo-list.git
-'''
+```
 
 Baixe as dependencias:
 ```bash
