@@ -1,0 +1,14 @@
+CREATE DATABASE todo_list;
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE IF NOT EXISTS tasks (
+  id UUID NOT NULL UNIQUE DEFAULT uuid_generate_v4(),
+  content VARCHAR NOT NULL
+);
+
+ALTER TABLE tasks
+ADD is_checked BOOLEAN DEFAULT 'false';
+
+ALTER TABLE tasks
+DROP COLUMN is_checked;

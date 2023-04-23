@@ -1,0 +1,92 @@
+.addTask {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  position: absolute;
+  top: 10.8125rem;
+  right: 30rem;
+}
+
+.addTask .input .standard {
+  width: 39.875rem;
+  background: var(--gray-500);
+  border: 2px solid var(--gray-700);
+  border-radius: 8px;
+
+  outline: none;
+  font-size: 1rem;
+  color: var(--gray-100);
+  padding: 1rem;
+
+  transition: border-color .2s ease-in;
+}
+
+.addTask .input .standard:focus {
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+}
+
+/* -------------------- Error -----------*/
+
+.addTask .input .danger {
+  width: 39.875rem;
+  background: var(--gray-500);
+  border: 2px solid var(--danger);
+  border-radius: 8px;
+
+  outline: none;
+  font-size: 1rem;
+  color: var(--gray-100);
+  padding: 1rem;
+
+  transition: border-color .2s ease-in;
+}
+
+.addTask .input .danger:focus {
+  border: 2px solid var(--danger);
+  border-radius: 8px;
+}
+
+.input small {
+  position: absolute;
+  margin-top: .5rem;
+  color: var(--danger);
+  display: block;
+}
+
+/* -------------------------------------*/
+
+
+.addTask button[type="submit"] {
+  padding: 1rem;
+  background: var(--blue-dark);
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--gray-100);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+
+  cursor: pointer;
+
+  transition: background .1s;
+}
+
+.addTask button[type="submit"]:hover {
+  background: var(--blue);
+}
+
+.addTask button[type="submit"]:active {
+  background: var(--blue-dark);
+}
+
+
+@media(max-width: 1366px) {
+  .addTask {
+    right: 19rem;
+  }
+}

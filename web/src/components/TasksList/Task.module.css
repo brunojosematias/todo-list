@@ -1,0 +1,29 @@
+.container {
+  margin-bottom:  7.125rem;
+}
+
+.counters {
+  margin-top: 5.6875rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.counters small {
+  font-size: .875rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.counters small + small {
+  color: var(--purple);
+}
+
+.counters small span {
+  font-size: 0.75rem;
+  padding: .125rem .5rem;
+  margin-left: .5rem;
+  background: var(--gray-400);
+  border-radius: 999px;
+  color: var(--gray-200);
+}
