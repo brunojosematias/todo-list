@@ -14,38 +14,38 @@
 #### web
 
 Clone o repositório:
-´´´bash
+'''bash
 git clone https://github.com/brunojosematias/todo-list.git
-´´´
+'''
 
 Baixe as dependencias:
-´´´bash
+```bash
 yarn
-´´´
+```
 ou
-´´´bash
+```bash
 npm i
-´´´
+```
 ##
 
 #### web
 inicie a aplicação:
-´´´bash
+```bash
 yarn dev
-´´´
+```
 ou 
-´´´bash
+```bash
 npm run dev
-´´´
+```
 
 ##
 
 #### api
 inicie a aplicação:
-´´´bash
+```bash
 yarn dev
-´´´
+```
 ou 
-´´´bash
+```bash
 npm run dev
-´´´
+```
